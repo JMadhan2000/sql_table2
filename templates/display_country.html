@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>TOPICS</h1>
+        <table border="3px">
+            <tr><th>COUNTRY_ID</th>
+                <th>COUNTRY_NAME</th>
+            </tr>
+        
+            {% for co in country %}
+            <tr>
+                <td>{{co.country_id}}</td>
+                <td>{{co.country_name}}</td>
+        
+
+            </tr>
+
+        
+
+            {% endfor %}
+            </tr>
+        </table>
+    
+    
+    </center>
+</body>
+</html>
